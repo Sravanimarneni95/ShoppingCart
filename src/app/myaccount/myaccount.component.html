@@ -1,14 +1,33 @@
-<!-- <body>
+<body>
     <h3>My Account</h3>
-    <form>
+        <form name = "form" #f = "ngForm" novalidate>
         <div class="form-group centered">
-            <input type ="text" placeholder="Email" >
+            <div class="input-icons"> 
+                <i class="fa fa-envelope icon"> 
+                </i> 
+            <input type="text" [(ngModel)]="model.Email" #Email="ngModel"
+            [ngClass]="{'is-invalid': f.submitted && Email.invalid}" 
+            placeholder = "Email" name="Email" required email/>
+            <div *ngIf = "f.submitted && Email.invalid" class="invalid-feedback" >
+                <div *ngIf = "Email.errors.required">Email is required</div> 
+                <div *ngIf = "Email.errors.email">Email must be valid email</div>
+            </div>
+            </div>
         </div>
         <div class="form-group centered">
-            <input type ="text" placeholder="Password">
+            <div class="input-icons"> 
+                <i class="fa fa-lock icon"> 
+                </i> 
+            <input type="text" [(ngModel)]="model.pwd" #pwd="ngModel"
+            [ngClass]="{'is-invalid': f.submitted && pwd.invalid}" placeholder = "Password" name="pwd" required />
+            <div class="invalid-feedback">
+                <div>password is required</div> 
+            </div>
+            </div>
         </div>
-        <div class = "btn">
-            <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+        <div class="form-group">
+            <button>Signup</button>
         </div>
+        
     </form>
-</body> -->
+</body>

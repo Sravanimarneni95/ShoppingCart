@@ -12,6 +12,7 @@ border: 1px solid #A9A9A9;
 padding: 20px;
 width: 400px;
 height: 10px;
+text-align:center;
 }
 button{
     padding:5px 50px;
@@ -24,5 +25,21 @@ input[type=text]:focus, input[type=password]:focus {
     outline: none;
 }
 .btn{
-    padding-right:250px;
+    padding-right:50px;
 }
+.input-icons i { 
+    position: absolute; 
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+} 
+  
+.icon { 
+    padding: 12px; 
+    padding-right:30px;
+    color: #418D84; 
+    min-width: 50px; 
+    text-align:center;
+} 

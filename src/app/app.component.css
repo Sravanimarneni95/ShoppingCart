@@ -2,6 +2,7 @@ nav{
     background-color: #418D84;
     width:100%;
     height:60px;
+    position:relative;
    
 }
 .navbar-nav-sm {
@@ -20,7 +21,7 @@ nav{
 }
 
 .nav-link:hover {
-    color:red;
+    color:black;
 }
 .nav-rightitem{
     display:inline;
@@ -29,5 +30,6 @@ nav{
 .nav-link{
     text-decoration:none;
     display:inline;
+    color:white;
    
 }

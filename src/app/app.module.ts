@@ -7,9 +7,13 @@ import { MyaccountComponent } from './myaccount/myaccount.component';
 import { SignupComponent } from './signup/signup.component';
 import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
-import { FormsModule } from '@angular/forms';
-
-
+import { WomenclothingComponent } from './women/womenclothing/womenclothing.component';
+import { WomenfootwearComponent } from './women/womenfootwear/womenfootwear.component';
+import { WomenaccessoriesComponent } from './women/womenaccessories/womenaccessories.component';
+import { MenclothingComponent } from './men/menclothing/menclothing.component';
+import { MenfootwearComponent } from './men/menfootwear/menfootwear.component';
+import { MenaccessoriesComponent } from './men/menaccessories/menaccessories.component';
+import { FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +22,13 @@ import { FormsModule } from '@angular/forms';
     MyaccountComponent,
     SignupComponent,
     MenComponent,
-    WomenComponent
+    WomenComponent,
+    WomenclothingComponent,
+    WomenfootwearComponent,
+    WomenaccessoriesComponent,
+    MenclothingComponent,
+    MenfootwearComponent,
+    MenaccessoriesComponent
     
   ],
   imports: [
